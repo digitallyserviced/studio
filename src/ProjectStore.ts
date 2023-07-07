@@ -63,7 +63,7 @@ class ProjectStore {
   image?: HTMLImageElement;
   previewCanvas = document.createElement('canvas');
   glue = new Glue(
-    this.previewCanvas.getContext('webgl', {
+    this.previewCanvas.getContext('webgl2', {
       premultipliedAlpha: false,
     })!
   );
